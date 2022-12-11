@@ -1,0 +1,22 @@
+.main_srch_container {
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+  
+}
+
+.search_container {
+  box-sizing: border-box;
+  width: 300px;
+  display: block;
+  padding: 10px;
+  background-color: rgb(225, 208, 170);
+  font-weight: bold;
+}
+input[type="text"] {
+  border: 2px solid red;
+  margin: 10px;
+}
+span {
+  margin-left: 5px;
+}

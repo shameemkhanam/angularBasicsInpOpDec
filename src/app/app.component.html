@@ -1,0 +1,16 @@
+<!-- <h1>Hello world...{{title}}</h1>
+<h3>Welcome to Angular...This is my first angular app!</h3>
+<p>{{message}}</p> -->
+
+<div class="container">
+  <app-search-box (searchTextChanged)="onSearchTextEntered($event)"></app-search-box>  
+</div>
+
+<ng-container *ngFor="let d of dataArr">
+  <div *ngIf="searchText == '' || d.name.toLowerCase().includes(searchText)">
+    <ul>
+      <li>Name: {{d.name}}, Age: {{d.age}}</li>
+    </ul>
+  </div>
+
+</ng-container>
